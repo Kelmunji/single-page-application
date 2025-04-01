@@ -1,13 +1,14 @@
 // Function to fetch artworks from the API
 async function fetchArtworks(query = '') {
     try {
-        const response = await fetch(`https://api.artic.edu/api/v1/artworks/search?q=${query}`);
+        const response = await fetch(`https://api.artic.edu/api/v1/artworks/${query}`);
         const data = await response.json();
         displayArtworks(data.data);
     } catch (error) {
         console.error('Error fetching artworks:', error);
     }
 }
+
 
 // Function to display artworks in the UI
 function displayArtworks(artworks) {
@@ -20,7 +21,7 @@ function displayArtworks(artworks) {
         const img = document.createElement('img');
 
         if (artwork.image_id) {
-            img.src = `https://www.artic.edu/iiif/2/${artwork.image_id}/full/400,/0/default.jpg`;
+            img.src = `https://www.artic.edu/iiif/2/${artwork.image_id}/full/800,/0/default.jpg`;
             li.appendChild(img);
         }
 

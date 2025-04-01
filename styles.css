@@ -2,9 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     text-align: center;
+    background-color: cadetblue;
 }
 h1 {
     text-align: center;
+    background-color: darkcyan;
+    font-size: 30px;
+    font-weight: 600px;
 }
 
 input {

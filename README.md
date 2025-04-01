@@ -14,7 +14,7 @@ This is a simple Single Page Application (SPA) built using HTML, CSS, and JavaSc
 ## Technologies Used
 - HTML
 - CSS
-- JavaScript (ES6)
+- JavaScript 
 
 ## Getting Started
 
